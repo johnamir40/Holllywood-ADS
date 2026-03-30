@@ -1,14 +1,14 @@
 :root {
-  --bg: #f8fbff;
-  --surface: #ffffff;
-  --surface-2: #eaf2ff;
-  --brand: #2563eb;
-  --brand-dark: #1d4ed8;
-  --text: #0f172a;
-  --muted: #475569;
-  --danger-bg: #fee2e2;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-2: #334155;
+  --brand: #f59e0b;
+  --brand-dark: #b45309;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --danger-bg: #7f1d1d;
   --danger-border: #ef4444;
-  --success-bg: #dcfce7;
+  --success-bg: #064e3b;
   --success-border: #10b981;
 }
 
@@ -20,15 +20,14 @@
 
 body {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(180deg, #ffffff 0%, #eff6ff 50%, #dbeafe 100%);
+  background: linear-gradient(180deg, #020617 0%, #0f172a 35%, #111827 100%);
   color: var(--text);
   min-height: 100vh;
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.96) !important;
-  border-bottom: 1px solid #bfdbfe;
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
+  background-color: rgba(2, 6, 23, 0.95) !important;
+  border-bottom: 1px solid #1f2937;
 }
 
 .navbar-brand {
@@ -39,7 +38,6 @@ body {
 
 .nav-link {
   color: var(--text) !important;
-  font-weight: 500;
 }
 
 .nav-link.active,
@@ -49,7 +47,7 @@ body {
 
 .hero {
   padding: 7rem 0 4rem;
-  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.2), transparent 55%);
+  background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.2), transparent 45%);
 }
 
 .hero h1 {
@@ -63,15 +61,14 @@ body {
 
 .card,
 .info-panel {
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid #bfdbfe;
+  background-color: rgba(30, 41, 59, 0.75);
+  border: 1px solid #334155;
   border-radius: 1rem;
   color: var(--text);
-  box-shadow: 0 14px 30px rgba(30, 64, 175, 0.07);
 }
 
 .card-title {
-  color: #1d4ed8;
+  color: #fde68a;
 }
 
 .muted {
@@ -80,23 +77,22 @@ body {
 
 .map-link {
   text-decoration: none;
-  color: #1d4ed8;
+  color: #fde68a;
   font-weight: 600;
 }
 
 .map-link:hover {
-  color: #1e40af;
+  color: #fcd34d;
 }
 
 .zone-pill {
-  border: 1px solid #93c5fd;
+  border: 1px solid #475569;
   color: var(--text);
-  background: #eff6ff;
 }
 
 .zone-pill.active {
   background-color: var(--brand) !important;
-  color: #ffffff !important;
+  color: #111827 !important;
   border-color: var(--brand);
 }
 
@@ -107,12 +103,12 @@ body {
 }
 
 .availability-item.available {
-  background-color: rgba(220, 252, 231, 0.9);
+  background-color: rgba(6, 78, 59, 0.4);
   border-color: var(--success-border);
 }
 
 .availability-item.reserved {
-  background-color: rgba(254, 226, 226, 0.95);
+  background-color: rgba(127, 29, 29, 0.55);
   border-color: var(--danger-border);
 }
 
@@ -124,7 +120,7 @@ body {
 
 .badge-status.available {
   background-color: #10b981;
-  color: #ffffff;
+  color: #022c22;
 }
 
 .badge-status.reserved {
@@ -139,7 +135,7 @@ body {
   z-index: 1050;
   border-radius: 999px;
   background-color: var(--brand);
-  color: #ffffff;
+  color: #111827;
   font-weight: 700;
   text-decoration: none;
   padding: 0.9rem 1.2rem;
@@ -164,11 +160,11 @@ body {
 }
 
 .contact-section a {
-  color: #1d4ed8;
+  color: #fde68a;
 }
 
 .footer {
-  border-top: 1px solid #bfdbfe;
+  border-top: 1px solid #374151;
   padding: 1.5rem 0 2.8rem;
   margin-top: 2rem;
   color: var(--muted);
