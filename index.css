@@ -1,25 +1,184 @@
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-2: #334155;
+  --brand: #f59e0b;
+  --brand-dark: #b45309;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --danger-bg: #7f1d1d;
+  --danger-border: #ef4444;
+  --success-bg: #064e3b;
+  --success-border: #10b981;
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --primary-color: rgb(178, 107, 83);
-}
-.mycontainer {
-  width: 100%;
-}
-.parent {
-  width: 100%;
-  height: 20vh;
 
-  background-color: var(--primary-color);
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #020617 0%, #0f172a 35%, #111827 100%);
+  color: var(--text);
+  min-height: 100vh;
 }
-.wickimg img {
-  height: 70px;
-  border-radius: 10px;
-  object-fit: cover;
+
+.navbar {
+  background-color: rgba(2, 6, 23, 0.95) !important;
+  border-bottom: 1px solid #1f2937;
 }
-.number {
-  padding: 0 8px;
+
+.navbar-brand {
+  color: var(--brand) !important;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: var(--text) !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--brand) !important;
+}
+
+.hero {
+  padding: 7rem 0 4rem;
+  background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.2), transparent 45%);
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.section-block {
+  padding: 4rem 0;
+}
+
+.card,
+.info-panel {
+  background-color: rgba(30, 41, 59, 0.75);
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  color: var(--text);
+}
+
+.card-title {
+  color: #fde68a;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.map-link {
+  text-decoration: none;
+  color: #fde68a;
+  font-weight: 600;
+}
+
+.map-link:hover {
+  color: #fcd34d;
+}
+
+.zone-pill {
+  border: 1px solid #475569;
+  color: var(--text);
+}
+
+.zone-pill.active {
+  background-color: var(--brand) !important;
+  color: #111827 !important;
+  border-color: var(--brand);
+}
+
+.availability-item {
+  border-radius: 0.8rem;
+  padding: 1rem;
+  border: 1px solid;
+}
+
+.availability-item.available {
+  background-color: rgba(6, 78, 59, 0.4);
+  border-color: var(--success-border);
+}
+
+.availability-item.reserved {
+  background-color: rgba(127, 29, 29, 0.55);
+  border-color: var(--danger-border);
+}
+
+.badge-status {
+  font-size: 0.8rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 999px;
+}
+
+.badge-status.available {
+  background-color: #10b981;
+  color: #022c22;
+}
+
+.badge-status.reserved {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.sticky-contact-btn {
+  position: fixed;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 1050;
+  border-radius: 999px;
+  background-color: var(--brand);
+  color: #111827;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.sticky-contact-btn:hover {
+  background-color: var(--brand-dark);
+  color: #fff;
+}
+
+.trailer-frame {
+  width: 100%;
+  min-height: 280px;
+  border: 0;
+  border-radius: 0.8rem;
+}
+
+.contact-section {
+  margin-top: 2rem;
+  padding: 2.2rem;
+}
+
+.contact-section a {
+  color: #fde68a;
+}
+
+.footer {
+  border-top: 1px solid #374151;
+  padding: 1.5rem 0 2.8rem;
+  margin-top: 2rem;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 5.7rem;
+  }
+
+  .sticky-contact-btn {
+    right: 0.7rem;
+    bottom: 0.7rem;
+    padding: 0.75rem 0.95rem;
+    font-size: 0.9rem;
+  }
 }
